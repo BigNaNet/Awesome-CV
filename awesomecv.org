@@ -1,0 +1,161 @@
+#+LATEX_CLASS: awesomecv
+#+CVCOLOR: nephritis
+#  Awesome Colors: emerald, skyblue, red, pink, orange, nephritis, concrete, darknight
+#+LATEX_COMPILER: xelatex
+#+LATEX_HEADER: \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+#+LATEX_HEADER: \fontdir[fonts/]
+#+MOBILE: +000 0000000
+# #+HOMEPAGE: example.com
+# #+ADDRESS: my adress
+# #+ADDRESS: when long address
+# #+ADDRESS: endless address
+# #+GITLAB: BigNaNet
+#+GITHUB: BigNaNet
+#+LINKEDIN: my_linkedin
+# #+PHOTO: myFface.png
+# #+QUOTE: My cute quote
+# HIGHLIGHT: true
+#+TITLE:  Physics Engineer
+#+AUTHOR: Daniel Ricardo Ferreira
+#+email: ferreira.d4.r@gmail.com
+
+* Summary
+** who am I
+:PROPERTIES:
+:CV_ENV: cvparag
+:END:
+Current Advanced Plant Engineer at Vestas.
+building experience  in the backend development,
+ and infrastructure automation.
+ Super nerd who loves emacs, Linux and  enjoys to customize all of the
+development environment.
+Interested in devising a better problem-solving method for challenging tasks,
+and learning new technologies and tools if the need arises.
+
+* Education
+#+LATEX: \begin{cventries}
+** Master Degree
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:
+:TO:
+:LOCATION: Coimbra
+:EMPLOYER: University of Coimbra
+:END:
+** Form
+:PROPERTIES:
+:CV_ENV: cvform
+:END:
+#+LATEX: \end{cventries}
+* Skills
+#+LATEX: \begin{cvskills}
+** Languages
+:Properties:
+:CV_ENV: cvskill
+:END:
+Portuguese, English, German, French
+** DevOps
+:Properties:
+:CV_ENV: cvskill
+:END:
+Git, CI/CD, Prometheus, Docker, Kubernetes
+** Programming
+:Properties:
+:CV_ENV: cvskill
+:END:
+Python, Java, Bash, elisp, MySQL, Latex
+** Data
+:Properties:
+:CV_ENV: cvskill
+:END:
+Machine Learning, Data Analysis
+** Form
+:PROPERTIES:
+:CV_ENV: cvform
+:END:
+#+LATEX:\end{cvskills}
+* Experience
+#+LATEX: \begin{cventries}
+** Advanced Plant Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2020-02-22>
+:TO:
+:LOCATION: Porto, Portugal
+:EMPLOYER: Vestas
+:END:
+ #+ATTR_LATEX: :environment cvitems
+- Currently I Work in Scientific back-ed code development.
+- Built automated  CI/CD pipelines for containerized applications using Docker,
+  Azure and gitlab.
+- Process paralelization with dask in python.
+- Implementing microservices in python.
+
+** Operational Forecast Engineer
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2019-10-22>
+:TO:       <2020-02-21>
+:LOCATION: Porto, Portugal
+:EMPLOYER: Vestas
+:END:
+#+ATTR_LATEX: :environment cvitems
+- Acquinted with state of the art technologies such as Containerization,
+  CI/CD processes, and Kubernetes.
+- Agile methodologies.
+- Deployed Prometheus as centrelized logging getherer for in house
+  gateway infrastructure for micrservices.
+- Deployed Alerta as centrelized notification system for gateway infrastructure.
+
+** Operational Forecast Engineer Trainee
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2018-10-22>
+:TO:       <2019-10-21>
+:LOCATION: Porto, Portugal
+:EMPLOYER: Vestas
+:END:
+#+ATTR_LATEX: :environment cvitems
+- Responsible for a fully running forecast system, based in SGE system and
+  python code.
+- First contact with machine learning algorithms, linux systems, relational
+  databases.
+** Form
+:PROPERTIES:
+:CV_ENV: cvform
+:END:
+#+LATEX: \end{cventries}
+* Volunteering
+#+LATEX: \begin{cventries}
+** Scout Monitor
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2016-09-22>
+:TO:
+:LOCATION: Viseu, Portugal
+:EMPLOYER: CNE, WOSM
+:END:
+- Work with kids, helping them aqcuire new competences that allow them to be
+  more organized, teamplayers and objective focused. All this while I get to
+  travel around and know some awesome hiking places
+** Vogal, Nucleo de Estudantes do Departamento de Física
+:PROPERTIES:
+:CV_ENV: cventry
+:FROM:     <2013-10-22>
+:TO: <2014-07-11 qui>
+:LOCATION: Coimbra, Portugal
+:EMPLOYER: Associação Académica de Coimbra
+:END:
+** Form
+:PROPERTIES:
+:CV_ENV: cvform
+:END:
+#+LATEX: \end{cventries}
+
+* Run me                                                           :noexport:
+#+BEGIN_SRC emacs-lisp
+(org-export-to-file 'awesomecv "awesome.tex")
+(org-latex-compile "awesome.tex")
+#+END_SRC
+
+#+RESULTS:
