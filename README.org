@@ -1,7 +1,7 @@
 * Awesome CV org-exporter
 
 Export backend for Awesome-CV template made by @posquito.
-THis is a Fork of his work.
+This is a Fork of his work.
 
 
 * What is Awesome CV?
